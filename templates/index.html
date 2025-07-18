@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Universal File Converter</title>
+</head>
+<body>
+    <h1>Universal File Converter</h1>
+    <form action="/convert" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required><br><br>
+        <label for="output_format">Convert to:</label>
+        <select name="output_format" required>
+            <option value="pdf">PDF (for .txt)</option>
+            <option value="jpg">JPG (for .png)</option>
+            <option value="mp3">MP3 (for .mp4)</option>
+            <option value="webp">WebP (for .jpg)</option>
+        </select><br><br>
+        <input type="submit" value="Convert File">
+    </form>
+</body>
+</html>
